@@ -25,6 +25,6 @@ Pod::Spec.new do |spec|
 
   spec.script_phase = { 
     :name => 'Prepare Project for ObjectBox', 
-    :script => 'ruby "${PODS_ROOT}/ObjectBox/project_setup.rb" "${PROJECT_FILE_PATH}" | bash --login'
+    :script => 'echo "ruby \"${PODS_ROOT}/ObjectBox/project_setup.rb\" \"${PROJECT_FILE_PATH}\"" | bash --login'
   }
 end
