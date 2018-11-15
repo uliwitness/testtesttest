@@ -19,7 +19,6 @@ Pod::Spec.new do |spec|
   spec.source = { 
     :http => 'https://github.com/uliwitness/testtesttest/releases/download/v0.1/test0_1.zip', 
   }
-  spec.preserve_paths = '*'
   spec.ios.vendored_frameworks = "iOS/ObjectBox.framework"
   spec.osx.vendored_frameworks = "Mac/ObjectBox.framework"
 end
