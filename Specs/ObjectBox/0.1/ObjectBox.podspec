@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "ObjectBox"
-  spec.version      = "0.0.1"
+  spec.version      = "0.1"
   spec.summary      = "ObjectBox is a superfast, lightweight database for objects."
 
   spec.description  = <<-DESC
