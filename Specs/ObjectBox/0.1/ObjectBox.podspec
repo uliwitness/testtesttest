@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "ObjectBox"
-  spec.version      = "0.1.1"
+  spec.version      = "0.1"
   spec.summary      = "ObjectBox is a superfast, lightweight database for objects."
 
   spec.description  = <<-DESC
@@ -19,8 +19,12 @@ Pod::Spec.new do |spec|
   spec.source = {
     :http => 'https://github.com/uliwitness/testtesttest/releases/download/v0.1/ObjectBox-framework-0.1.zip', 
   }
-  spec.preserve_paths = '{templates,*.rb}'
-  spec.script_phase = { :name => 'Prepare Project for ObjectBox', :script => 'ruby "${PODS_ROOT}/ObjectBox/project_setup.rb" "${PROJECT_FILE_PATH}" | bash --login' }
+  spec.preserve_paths = '{templates,*.rb,*.sh,*.command}'
   spec.ios.vendored_frameworks = "iOS/ObjectBox.framework"
   spec.osx.vendored_frameworks = "Mac/ObjectBox.framework"
+
+  spec.script_phase = { 
+    :name => 'Prepare Project for ObjectBox', 
+    :script => 'ruby "${PODS_ROOT}/ObjectBox/project_setup.rb" "${PROJECT_FILE_PATH}" | bash --login'
+  }
 end
