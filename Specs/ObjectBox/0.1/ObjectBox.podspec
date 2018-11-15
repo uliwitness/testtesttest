@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
                       ObjectBox is a superfast object-oriented database with strong relation support. ObjectBox is embedded into your Android, Linux, iOS, macOS, or Windows app.
                       DESC
   spec.homepage     = "https://objectbox.io"
-  spec.license      = [ "Apache 2.0", "ObjectBox Binary License" ]
+  spec.license      = "Apache 2.0, ObjectBox Binary License"
   spec.social_media_url   = "https://twitter.com/objectbox_io"
 
   spec.authors            = [ "ObjectBox" ]
