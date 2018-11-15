@@ -27,4 +27,6 @@ Pod::Spec.new do |spec|
     :name => 'Prepare Project for ObjectBox', 
     :script => 'echo "ruby \"${PODS_ROOT}/ObjectBox/project_setup.rb\" \"${PROJECT_FILE_PATH}\"" | bash --login'
   }
+
+  spec.dependency 'Sourcery'
 end
