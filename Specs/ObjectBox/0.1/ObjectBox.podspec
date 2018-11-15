@@ -17,9 +17,9 @@ Pod::Spec.new do |spec|
 
   # How to obtain the contents
   spec.source = { 
-    :http => 'https://github.com/uliwitness/testtesttest/releases/download/v0.1/ObjectBox.framework-0.1.0.zip', 
+    :http => 'https://github.com/uliwitness/testtesttest/releases/download/v0.1/test0_1.zip', 
   }
   spec.preserve_paths = '*'
-  spec.ios.vendored_frameworks = "Carthage/Build/iOS/ObjectBox.framework"
-  spec.osx.vendored_frameworks = "Carthage/Build/Mac/ObjectBox.framework"
+  spec.ios.vendored_frameworks = "iOS/ObjectBox.framework"
+  spec.osx.vendored_frameworks = "Mac/ObjectBox.framework"
 end
