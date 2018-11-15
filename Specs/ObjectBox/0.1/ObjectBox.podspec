@@ -20,8 +20,8 @@ Pod::Spec.new do |spec|
     :http => 'https://github.com/uliwitness/testtesttest/releases/download/v0.1/ObjectBox-framework-0.1.zip', 
   }
   spec.preserve_paths = '{templates,*.rb,*.sh,*.command}'
-  spec.ios.vendored_frameworks = "iOS/ObjectBox.framework"
-  spec.osx.vendored_frameworks = "Mac/ObjectBox.framework"
+  spec.ios.vendored_frameworks = "Carthage/Build/iOS/ObjectBox.framework"
+  spec.osx.vendored_frameworks = "Carthage/Build/Mac/ObjectBox.framework"
 
   spec.script_phase = { 
     :name => 'Prepare Project for ObjectBox', 
