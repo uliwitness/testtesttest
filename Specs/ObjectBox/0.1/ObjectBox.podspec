@@ -18,7 +18,6 @@ Pod::Spec.new do |spec|
   # How to obtain the contents
   spec.source = { 
     :http => 'https://github.com/uliwitness/testtesttest/releases/download/v0.1/test0_1.zip', 
-    :tag => spec.version.to_s 
   }
   spec.ios.vendored_frameworks = "iOS/ObjectBox.framework"
   spec.osx.vendored_frameworks = "Mac/ObjectBox.framework"
