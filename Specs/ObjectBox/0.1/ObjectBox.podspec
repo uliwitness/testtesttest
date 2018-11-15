@@ -7,17 +7,17 @@ Pod::Spec.new do |spec|
                       ObjectBox is a superfast object-oriented database with strong relation support. ObjectBox is embedded into your Android, Linux, iOS, macOS, or Windows app.
                       DESC
   spec.homepage     = "https://objectbox.io"
-  spec.license      = "MIT"
+  spec.license      = [ "Apache 2.0", "ObjectBox Binary License" ]
   spec.social_media_url   = "https://twitter.com/objectbox_io"
 
-  spec.authors            = [ "ObjectBox", "Christian Tietze" ]
+  spec.authors            = [ "ObjectBox" ]
 
   spec.ios.deployment_target = "10.0"
   spec.osx.deployment_target = "10.10"
 
   # How to obtain the contents
-  spec.source = { 
-    :http => 'https://github.com/uliwitness/testtesttest/releases/download/v0.1/test0_1.zip', 
+  spec.source = {
+    :http => 'https://github.com/uliwitness/testtesttest/releases/download/v0.1/ObjectBox-framework-0.1.zip', 
   }
   spec.preserve_paths = 'templates'
   spec.ios.vendored_frameworks = "iOS/ObjectBox.framework"
