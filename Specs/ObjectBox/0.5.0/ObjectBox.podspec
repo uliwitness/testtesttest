@@ -22,11 +22,6 @@ Pod::Spec.new do |spec|
   spec.preserve_paths = '{templates,*.rb,*.sh,*.command}'
   spec.ios.vendored_frameworks = "Carthage/Build/iOS/ObjectBox.framework"
   spec.osx.vendored_frameworks = "Carthage/Build/Mac/ObjectBox.framework"
-
-   spec.script_phase = { 
-     :name => 'Prepare Project for ObjectBox', 
-     :script => 'echo "ruby \"${PODS_ROOT}/ObjectBox/project_setup.rb\" \"${PROJECT_FILE_PATH}\"" | bash --login'
-   }
-   
-   spec.dependency 'Sourcery'
+  
+  spec.dependency 'Sourcery'
 end
