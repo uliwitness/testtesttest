@@ -23,7 +23,10 @@ Pod::Spec.new do |spec|
   spec.ios.vendored_frameworks = "Carthage/Build/iOS/ObjectBox.framework"
   spec.osx.vendored_frameworks = "Carthage/Build/Mac/ObjectBox.framework"
 
-  spec.prepare_command = 'echo "PREPARING ULI:"; pwd; sleep 30; echo "RUNNING ULI:"; ruby project_setup.rb; sleep 60'
-
-  spec.dependency 'Sourcery'
+   spec.script_phase = { 
+     :name => 'Prepare Project for ObjectBox', 
+     :script => 'echo "ruby \"${PODS_ROOT}/ObjectBox/project_setup.rb\" \"${PROJECT_FILE_PATH}\"" | bash --login'
+   }
+   
+   spec.dependency 'Sourcery'
 end
