@@ -28,5 +28,5 @@ Pod::Spec.new do |spec|
      :script => 'echo "ruby \"${PODS_ROOT}/ObjectBox/project_setup.rb\" \"${PROJECT_FILE_PATH}\"" | bash --login'
    }
    
-   spec.dependency 'Sourcery'
+   spec.dependency 'Sourcery', :source => "https://github.com/CocoaPods/Specs.git"
 end
