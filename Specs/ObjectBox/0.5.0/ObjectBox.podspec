@@ -17,16 +17,13 @@ Pod::Spec.new do |spec|
 
   # How to obtain the contents
   spec.source = {
-    :http => 'https://github.com/uliwitness/testtesttest/releases/download/v0.5.0/ObjectBox-framework-0.5.0.zip', 
+    :http => 'https://github.com/objectbox/objectbox-swift/releases/download/v0.5.0/ObjectBox-framework-0.5.0.zip', 
   }
   spec.preserve_paths = '{templates,*.rb,*.sh,*.command}'
   spec.ios.vendored_frameworks = "Carthage/Build/iOS/ObjectBox.framework"
   spec.osx.vendored_frameworks = "Carthage/Build/Mac/ObjectBox.framework"
 
-  spec.script_phase = { 
-    :name => 'Prepare Project for ObjectBox', 
-    :script => 'echo "ruby \"${PODS_ROOT}/ObjectBox/project_setup.rb\" \"${PROJECT_FILE_PATH}\"" | bash --login'
-  }
+  spec.prepare_command = 'ruby prepare_pod.rb'
 
   spec.dependency 'Sourcery'
 end
