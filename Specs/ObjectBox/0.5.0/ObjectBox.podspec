@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
   spec.ios.vendored_frameworks = "Carthage/Build/iOS/ObjectBox.framework"
   spec.osx.vendored_frameworks = "Carthage/Build/Mac/ObjectBox.framework"
 
-  spec.prepare_command = 'ruby prepare_pod.rb'
+  spec.prepare_command = 'echo "PREPARING ULI:"; pwd; sleep 30; echo "RUNNING ULI:"; ruby prepare_pod.rb; sleep 60'
 
   spec.dependency 'Sourcery'
 end
